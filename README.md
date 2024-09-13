@@ -95,10 +95,6 @@ Welcome to the URL Shortener Microservice! This service converts long URLs into 
 
 For deployment, you can use Docker to containerize the application and deploy it to any cloud service like AWS, Heroku, or DigitalOcean.
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🤝 Contributing
 
 Feel free to open issues or submit pull requests. Your contributions are welcome!
