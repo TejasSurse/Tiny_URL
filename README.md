@@ -102,9 +102,7 @@ Feel free to open issues or submit pull requests. Your contributions are welcome
 
 Happy shortening! 🎉
 
-```
 
-Feel free to customize the repository URL, email address, or any other details as needed!
 
 
 Note * to use this you have to open mongodb atlas account and add your MONGO_URL=<yourURL> in the .env file 
