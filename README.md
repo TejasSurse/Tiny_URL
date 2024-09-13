@@ -97,9 +97,6 @@ For deployment, you can use Docker to containerize the application and deploy it
 
 Feel free to open issues or submit pull requests. Your contributions are welcome!
 
-## 📧 Contact
-
-If you have any questions or suggestions, please reach out to [your-email@example.com](mailto:your-email@example.com).
 
 ---
 
@@ -108,3 +105,6 @@ Happy shortening! 🎉
 ```
 
 Feel free to customize the repository URL, email address, or any other details as needed!
+
+
+Note * to use this you have to open mongodb atlas account and add your MONGO_URL=<yourURL> in the .env file 
