@@ -67,7 +67,6 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use('/public', express.static(`${process.cwd()}/public`));
 
-<<<<<<< HEAD
 // Serve the index.html file
 app.get('/', function(req, res) {
   res.sendFile(process.cwd() + '/views/index.html');
@@ -90,19 +89,10 @@ app.get("/api/shorturl/:short_url", (req, res) => {
 app.post('/api/shorturl', async (req, res) => {
   let url = req.body.url;
   // Validate the URL
-=======
-app.get('/', (req, res) => {
-  res.sendFile(process.cwd() + '/views/index.html');
-});
-
-app.post('/api/shorturl', async (req, res) => {
-  let url = req.body.url;
->>>>>>> d3c5aff950138290671349ff7569ba6722151c11
   try {
     const urlObj = new URL(url);
     dns.lookup(urlObj.hostname, async (err, address) => {
       if (err || !address) {
-<<<<<<< HEAD
         res.json({ error: 'invalid url' });
       } else {
         try {
@@ -122,19 +112,6 @@ app.post('/api/shorturl', async (req, res) => {
           res.json({ error: 'Database error' });
         }
       }
-=======
-        return res.json({ error: 'invalid url' });
-      }
-
-      let lastUrl = await URLModel.findOne({}).sort({ short_url: -1 }).exec();
-      let shortUrl = lastUrl ? lastUrl.short_url + 1 : 1;
-      const shortUrlStr = shortUrl.toString();
-
-      const newUrl = new URLModel({ original_url: urlObj.href, short_url: shortUrl });
-      await newUrl.save();
-
-      res.json({ original_url: urlObj.href, short_url: shortUrl });
->>>>>>> d3c5aff950138290671349ff7569ba6722151c11
     });
   } catch {
     res.json({ error: 'invalid url' });
