@@ -1,6 +1,4 @@
-Sure! Here’s an attractive `README.md` file with emojis and usage instructions for your URL shortener microservice project:
 
-```markdown
 # URL Shortener Microservice 🚀
 
 Welcome to the URL Shortener Microservice! This service converts long URLs into shorter, more manageable links. Perfect for simplifying link sharing and tracking URL usage.
